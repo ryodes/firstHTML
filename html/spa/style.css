@@ -1,0 +1,46 @@
+header li {
+    display: inline-block;
+}
+h1,li {
+    color: red;
+    padding: 10px;
+}
+
+#square{
+    width: 80px;
+    height: 80px;
+    background-color: burlywood; 
+}
+
+#circle {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: blue
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid blue;
+}
+
+.bef::after{
+    content: "ok";
+    width: 60px;
+    height: 60px;
+    background-color: coral;
+}
+
+:target {
+    animation: appears 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes appears {
+    to{
+        color: white;
+        background-color: black;
+    }
+}

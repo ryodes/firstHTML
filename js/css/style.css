@@ -1,0 +1,16 @@
+.active{
+    background: red;
+    padding: 10px
+}
+
+.active a{
+    color: white;
+}
+
+[id] {
+    display: none;
+}
+
+:target {
+    display: block;
+}

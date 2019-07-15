@@ -1,0 +1,32 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <title>Utilisation de switch et de l'objet Date</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <script type="text/javascript">
+  function jourDeLaSemaine()
+  {
+	var nom ;
+	var prenom = 45;
+	
+	var semaine = new Date;
+	jour = semaine.getDay();
+	alert(jour);
+	var ternaire = (typeof(prenom)=="string")?"la var est un string":"la variable n'est pas un string" ;
+	alert((true)?"cette affirmation est vrai":"c'est faux normalement") ;
+	alert(ternaire);
+	
+  }
+ 
+  </script>
+</head>
+<body>
+
+<h1>Utilisation de switch et de l'objet Date</h1>
+
+<p>Cliquez sur le bouton pour lancer la fonction&nbsp;: <button onclick="jourDeLaSemaine()">Lancer la fonction</button></p>
+
+</body>
+</html>
